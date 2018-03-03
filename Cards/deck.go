@@ -11,7 +11,6 @@ import (
 
 // Create a new type of 'deck'
 // which is a slice of strings
-
 type deck []string
 
 func newDeck() deck {
@@ -22,7 +21,7 @@ func newDeck() deck {
 
 	for _, suit := range cardSuits {
 		for _, value := range cardValues {
-			cards = append(cards, suit+" of "+value)
+			cards = append(cards, value+" of "+suit)
 		}
 	}
 
